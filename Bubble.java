@@ -1,26 +1,18 @@
-class Bubble{
+class Bubble {
 public static void main(String args[]) {
-int nums[]= {99, -10, 100123 ,18, -978, 5623, 463, -9, 287, 49};
-int a,b,t;
-int size =10;
-
-  System.out.println("THE ORIGINAL ARRAY IS");
- for(int i=0; i < size; i++)
-System.out.print("  " + nums[i]);
-System.out.println();
-for(a=1; a < size ; a++)
-for(b=size-1; b >= a; b-- ) {
-if(nums[b-1] > nums[b] ) {
-t=nums [b-1];
-nums [b-1] = nums[b];
-nums [b] = t;
-   }
-}
-
- System.out.println(" Sorted array  is ");
-for(int i=0; i < size; i++)
-System.out.print("  " + nums[i]);
-System.out.println();
+int num[]={-12,13,54,90,87,54,34,20,78,57};
+int a, b, i, temp=0;
+int size;
+size=10;
+for(i=0; i<10; i++)
+System.out.println("Original array is=" +num [i]);
+for(a=1; a<size; a++)
+for(b=size-1; b>=a; b--) {
+if (num[b-1]>num[b]){
+temp=num[b];
+num[b-1]=num[b];
+num[b]=temp;
+}}
+System.out.println("The sorted array is=" +num[i]);
 }
 }
-
